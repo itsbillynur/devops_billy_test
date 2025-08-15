@@ -1,0 +1,5 @@
+severity: HIGH,CRITICAL
+ignore-unfixed: true
+format: json
+output: security/trivy-result.json
+exit-code: 1

@@ -1,3 +1,9 @@
+const apm = require('elastic-apm-node').start({
+  serviceName: 'devops-test-api',
+  serverUrl: 'http://host.docker.internal:8200',
+  captureBody: 'all',
+});
+
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
